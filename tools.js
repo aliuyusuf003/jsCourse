@@ -185,7 +185,7 @@ console.log(typeof today);
 const firstName = 'William';
 const lastName = 'Johnson';
 const age = 36;
-const str = 'Hello there my name is Brad';
+const str = 'Hello there my name is Yusuf';
 const tags = 'web design,web development,programming';
 
 let val;
@@ -196,8 +196,8 @@ val = firstName + lastName;
 val = firstName + ' ' + lastName;
 
 // Append
-val = 'Brad ';
-val += 'Traversy';
+val = 'Yusuf ';
+val += 'Aliu';
 
 val = 'Hello, my name is ' + firstName + ' and I am ' + age;
 
@@ -237,7 +237,7 @@ val = str.split(' ');
 val = tags.split(',');
 
 // replace()
-val = str.replace('Brad', 'Jack');
+val = str.replace('Yusuf', 'Jack');
 
 // includes()
 val = str.includes('foo');
@@ -579,7 +579,7 @@ const square = function(x = 3){
 
 // (function(name){
 //   console.log('Hello '+ name);
-// })('Brad');
+// })('Yusuf');
 
 // PROPERTY METHODS
 
