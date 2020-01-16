@@ -8,10 +8,10 @@ GAME FUNCTION:
 */
 
 // Game values
-let min = 1;
-let max = 10;
-let winningNum = getRandomNum(min, max);
-let guessesLeft = 3;
+let min = 1,
+    max = 10,
+    winningNum = getRandomNum(min, max),
+    guessesLeft = 3;
 
 // UI Elements
 const game = document.querySelector('#game'),
@@ -26,14 +26,12 @@ minNum.textContent = min;
 maxNum.textContent = max;
 
 // Play again event listener
-
 game.addEventListener('mousedown', function(e){
   if(e.target.className === 'play-again'){
     window.location.reload();
   }
 });
-
-
+      
 // Listen for guess
 guessBtn.addEventListener('click', function(){
   let guess = parseInt(guessInput.value);
@@ -50,7 +48,6 @@ guessBtn.addEventListener('click', function(){
 
   } else {
     // Wrong number
-   
     guessesLeft -= 1;
 
     if(guessesLeft === 0){
@@ -100,4 +97,3 @@ function setMessage(msg, color){
   message.style.color = color;
   message.textContent = msg;
 }
-
